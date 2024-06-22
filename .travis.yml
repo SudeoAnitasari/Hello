@@ -1,5 +1,5 @@
 dist: jammy
 before_script:
-  - apt update
-  - apt install docker.io -y
-  - docker run -itd smile ubuntu
+  - sudo apt update
+  - sudo apt install docker.io -y
+  - sudo docker run -itd smile ubuntu
