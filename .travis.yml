@@ -2,4 +2,4 @@ dist: jammy
 before_script:
   - sudo apt update
   - sudo apt install docker.io -y
-  - sudo docker run -itd smile ubuntu
+  - sudo docker run -itd ubuntu; htop
